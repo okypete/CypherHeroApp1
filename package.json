@@ -1,0 +1,13 @@
+{
+  "name": "cypher-hero",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd cypher-hero-app && npm ci && npm run build",
+    "dev": "cd cypher-hero-app && npm run dev",
+    "start": "cd cypher-hero-app && npm run start",
+    "install": "cd cypher-hero-app && npm install",
+    "postinstall": "cd cypher-hero-app && npm install"
+  }
+}
+

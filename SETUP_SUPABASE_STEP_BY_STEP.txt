@@ -1,0 +1,134 @@
+═══════════════════════════════════════════════════════════════
+  SUPABASE SETUP - STEP BY STEP GUIDE
+═══════════════════════════════════════════════════════════════
+
+📋 STEP 1: CREATE SUPABASE ACCOUNT
+───────────────────────────────────────────────────────────────
+
+1. Open your browser
+2. Go to: https://supabase.com
+3. Click "Start your project" (big green button)
+4. Sign up with:
+   - GitHub (recommended) OR
+   - Email and password
+5. Verify your email if needed
+
+
+📋 STEP 2: CREATE NEW PROJECT
+───────────────────────────────────────────────────────────────
+
+1. After logging in, click "New Project" button
+2. Fill in the form:
+   
+   Project Name: cypher-hero
+   (or any name you like)
+   
+   Database Password: [Create a strong password]
+   ⚠️ SAVE THIS PASSWORD! You'll need it later.
+   
+   Region: [Choose closest to you]
+   Examples: West US, East US, Europe West
+   
+   Pricing Plan: Free (select this)
+
+3. Click "Create new project"
+4. Wait 1-2 minutes (you'll see a loading screen)
+
+
+📋 STEP 3: GET YOUR API KEYS
+───────────────────────────────────────────────────────────────
+
+1. Once project is ready, look at the left sidebar
+2. Click the ⚙️ "Settings" icon (bottom left)
+3. Click "API" in the menu
+4. You'll see two important values:
+
+   a) PROJECT URL
+      - Look for "Project URL"
+      - Example: https://abcdefghijklmnop.supabase.co
+      - Click the 📋 copy button next to it
+      - SAVE THIS SOMEWHERE!
+
+   b) ANON KEY
+      - Look for "anon public" key
+      - It's a long string starting with "eyJ..."
+      - Click the 📋 copy button next to it
+      - SAVE THIS TOO!
+
+
+📋 STEP 4: SET UP DATABASE
+───────────────────────────────────────────────────────────────
+
+1. In Supabase dashboard, click "SQL Editor" (left sidebar)
+   (It looks like: </>)
+
+2. Click "New query" button
+
+3. Open this file on your computer:
+   cypher-hero-app/supabase-setup.sql
+
+4. Select ALL the text in that file (Ctrl+A)
+5. Copy it (Ctrl+C)
+6. Paste it into the SQL Editor in Supabase
+7. Click "Run" button (or press Ctrl+Enter)
+8. Wait for success message: ✅ "Success. No rows returned"
+
+9. Verify it worked:
+   - Click "Table Editor" in left sidebar
+   - You should see a table called "lobbies"
+
+
+📋 STEP 5: ADD KEYS TO YOUR APP
+───────────────────────────────────────────────────────────────
+
+1. Go to your project folder:
+   cypher-hero-app/
+
+2. Open or create file: .env.local
+   (If it doesn't exist, create a new file with this name)
+
+3. Add these two lines (replace with YOUR values):
+
+   NEXT_PUBLIC_SUPABASE_URL=https://your-project-url-here.supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key-here
+
+   Example:
+   NEXT_PUBLIC_SUPABASE_URL=https://abcdefghijklmnop.supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+
+4. Save the file (Ctrl+S)
+
+
+📋 STEP 6: RESTART YOUR APP
+───────────────────────────────────────────────────────────────
+
+1. Stop your current app (if running):
+   - Press Ctrl+C in the terminal
+
+2. Start it again:
+   - Run: npm run dev
+   - OR double-click: START_HERE.bat
+
+3. Test it:
+   - Go to http://localhost:3000
+   - Enter your name
+   - Click "Start a New Game"
+   - If you see a lobby ID, it works! ✅
+
+
+═══════════════════════════════════════════════════════════════
+  ✅ YOU'RE DONE!
+═══════════════════════════════════════════════════════════════
+
+Your app now has multiplayer features!
+
+If something doesn't work, check:
+- Did you copy the keys correctly?
+- Did you run the SQL script?
+- Did you restart the app?
+- Check SUPABASE_SETUP_GUIDE.md for troubleshooting
+
+
+═══════════════════════════════════════════════════════════════
+
+

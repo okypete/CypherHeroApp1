@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm run install",
+  "outputDirectory": "cypher-hero-app/.next",
+  "framework": "nextjs"
+}
+

@@ -1,0 +1,24 @@
+LOGO DOSYASI EKLEME TALİMATLARI
+================================
+
+Logo dosyası şu anda eksik. Logo görünmesi için aşağıdaki adımları izleyin:
+
+1. Logo dosyanızı hazırlayın:
+   - Format: PNG (şeffaf arka plan önerilir)
+   - İsim: cypher-hero-logo.png
+   - Boyut: En az 512x256px (daha büyük olabilir)
+
+2. Dosyayı bu klasöre kopyalayın:
+   cypher-hero-app/public/cypher-hero-logo.png
+
+3. Dosya yolu tam olarak şöyle olmalı:
+   cypher-hero-app/
+     public/
+       cypher-hero-logo.png  ← Logo dosyanız buraya
+
+4. Uygulamayı yeniden başlatın (eğer çalışıyorsa)
+
+NOT: Logo dosyası eklenene kadar, uygulama otomatik olarak 
+metin tabanlı bir logo gösterecektir.
+
+
