@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
-import { getRandomFlowCard, FlowCard } from '@/lib/gameData';
+import { getRandomFlowCard, FlowCard, getNextCypherGate, BOARD_SQUARES } from '@/lib/gameData';
 
 interface BattleModalProps {
   player1: string; // Player already in Cypher
