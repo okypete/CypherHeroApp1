@@ -29,7 +29,7 @@ export default function TestBackground() {
           <p>If not, check:</p>
           <ul className="list-disc ml-6 mt-2">
             <li>File exists in public/background-pattern.png</li>
-            <li>File name is exactly &quot;background-pattern.png&quot;</li>
+            <li>File name is exactly {'"'}background-pattern.png{'"'}</li>
             <li>Browser console for errors</li>
           </ul>
         </div>
