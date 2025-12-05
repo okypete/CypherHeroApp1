@@ -26,7 +26,9 @@ export default function GameScreen() {
     playerName, 
     players, 
     setPlayers, 
+    energy,
     setEnergy, 
+    cypherStones,
     setCypherStones, 
     battleState, 
     setBattleState,
@@ -128,7 +130,7 @@ export default function GameScreen() {
     return () => {
       supabase.removeChannel(channel);
     };
-  }, [lobbyId, playerName, currentPlayerIndex, battleState, router]);
+  }, [lobbyId, playerName, currentPlayerIndex, battleState, router, setBattleState, setCurrentPlayerIndex, setCypherStones, setEnergy, setGameSettings, setGameStarted, setPlayers, energy, cypherStones]);
 
 
   // Update round if completed a full loop (energy system removed)

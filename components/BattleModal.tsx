@@ -284,7 +284,7 @@ export default function BattleModal({ player1, player2, onClose }: BattleModalPr
 
       return () => clearTimeout(timer);
     }
-  }, [allVoted, winner, lobbyId, playerName, player1, player2, setInCypher, playerPosition]);
+  }, [allVoted, winner, lobbyId, playerName, player1, player2, setInCypher, playerPosition, onClose, setBattleState]);
 
   const handleVote = async (votedPlayerName: string) => {
     if (hasVoted || !isJury) return;

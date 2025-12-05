@@ -192,7 +192,7 @@ export default function LobbyScreen() {
         clearInterval(pollInterval);
       }
     };
-  }, [lobbyId, setPlayers, playerName, isHost, setGameStarted, router]);
+  }, [lobbyId, setPlayers, playerName, isHost, setGameStarted, router, setGameSettings]);
 
   const handleCopyLobbyId = () => {
     if (lobbyId) {

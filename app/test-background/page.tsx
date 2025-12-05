@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function TestBackground() {
   return (
     <div className="min-h-screen bg-dark-bg p-8">
@@ -8,9 +10,11 @@ export default function TestBackground() {
       <div className="space-y-4">
         <div>
           <p className="text-white mb-2">Direct Image:</p>
-          <img 
+          <Image 
             src="/background-pattern.png" 
             alt="Background Pattern" 
+            width={800}
+            height={600}
             className="w-full max-w-md border-2 border-white"
             onError={(e) => {
               console.error('Image failed to load');
@@ -25,7 +29,7 @@ export default function TestBackground() {
           <p>If not, check:</p>
           <ul className="list-disc ml-6 mt-2">
             <li>File exists in public/background-pattern.png</li>
-            <li>File name is exactly "background-pattern.png"</li>
+            <li>File name is exactly &quot;background-pattern.png&quot;</li>
             <li>Browser console for errors</li>
           </ul>
         </div>
